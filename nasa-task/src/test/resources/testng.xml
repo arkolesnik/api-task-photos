@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API test NASA" parallel="false" verbose="7">
+    <test name="Compare photos took by Curiosity">
+        <classes>
+            <class name="NasaAPITest"/>
+            <methods>
+                <include name="checkPhotosAreEqual">
+                    <parameter name="numberOfPhotos" value="10"/>
+                    <parameter name="sol" value="1000"/>
+                </include>
+                <include name="checkPhotosCountDifference2Option">
+                    <parameter name="sol" value="1000"/>
+                </include>
+            </methods>
+        </classes>
+    </test>
+</suite>
